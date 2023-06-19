@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище user12_dbModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Film">
+    <Key>
+      <PropertyRef Name="ID_Film" />
+    </Key>
+    <Property Name="ID_Film" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NameFilm" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Photo" Type="image" />
+    <Property Name="PhotoURL" Type="nvarchar(max)" />
+    <Property Name="Zanr" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Ogranichenie" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Opisanie" Type="text" Nullable="false" />
+    <Property Name="Date_seans" Type="date" />
+    <Property Name="time_seans" Type="time" Precision="7" />
+    <Property Name="Time_Film" Type="time" Precision="7" />
+    <Property Name="Country" Type="varchar" MaxLength="50" />
+    <Property Name="Zal" Type="varchar" MaxLength="50" />
+    <Property Name="mesto1" Type="varchar" MaxLength="5" />
+    <Property Name="mesto2" Type="varchar" MaxLength="5" />
+    <Property Name="mesto3" Type="varchar" MaxLength="5" />
+    <Property Name="mesto4" Type="varchar" MaxLength="5" />
+    <Property Name="mesto5" Type="varchar" MaxLength="5" />
+    <Property Name="mesto6" Type="varchar" MaxLength="5" />
+    <Property Name="mesto7" Type="varchar" MaxLength="5" />
+    <Property Name="mesto8" Type="varchar" MaxLength="5" />
+    <Property Name="mesto9" Type="varchar" MaxLength="5" />
+    <Property Name="mesto10" Type="varchar" MaxLength="5" />
+    <Property Name="mesto11" Type="varchar" MaxLength="5" />
+    <Property Name="mesto12" Type="varchar" MaxLength="5" />
+    <Property Name="mesto13" Type="varchar" MaxLength="5" />
+    <Property Name="mesto14" Type="varchar" MaxLength="5" />
+    <Property Name="mesto15" Type="varchar" MaxLength="5" />
+    <Property Name="mesto16" Type="varchar" MaxLength="5" />
+    <Property Name="mesto17" Type="varchar" MaxLength="5" />
+    <Property Name="mesto18" Type="varchar" MaxLength="5" />
+    <Property Name="mesto19" Type="varchar" MaxLength="5" />
+    <Property Name="mesto20" Type="varchar" MaxLength="5" />
+    <Property Name="mesto21" Type="varchar" MaxLength="5" />
+    <Property Name="mesto22" Type="varchar" MaxLength="5" />
+    <Property Name="mesto23" Type="varchar" MaxLength="5" />
+    <Property Name="mesto24" Type="varchar" MaxLength="5" />
+    <Property Name="mesto25" Type="varchar" MaxLength="5" />
+    <Property Name="mesto26" Type="varchar" MaxLength="5" />
+    <Property Name="mesto27" Type="varchar" MaxLength="5" />
+    <Property Name="mesto28" Type="varchar" MaxLength="5" />
+    <Property Name="mesto29" Type="varchar" MaxLength="5" />
+    <Property Name="mesto30" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto1" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto2" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto3" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto4" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto5" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto6" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto7" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto8" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto9" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto10" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto11" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto12" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto13" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto14" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto15" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto16" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto17" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto18" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto19" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto20" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto21" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto22" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto23" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto24" Type="varchar" MaxLength="5" />
+    <Property Name="Zal2mesto25" Type="varchar" MaxLength="5" />
+  </EntityType>
+  <EntityType Name="Seans">
+    <Key>
+      <PropertyRef Name="ID_Seans" />
+    </Key>
+    <Property Name="ID_Seans" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDFilm" Type="int" />
+    <Property Name="DataSeans" Type="date" Nullable="false" />
+    <Property Name="time" Type="varchar" MaxLength="5" Nullable="false" />
+    <Property Name="Mesta" Type="varchar" MaxLength="8" />
+  </EntityType>
+  <EntityType Name="User1">
+    <Key>
+      <PropertyRef Name="ID_User" />
+    </Key>
+    <Property Name="ID_User" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="loginUser" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="passUser" Type="varchar" MaxLength="15" Nullable="false" />
+    <Property Name="Fama" Type="text" Nullable="false" />
+    <Property Name="Name" Type="text" Nullable="false" />
+    <Property Name="Otch" Type="text" Nullable="false" />
+    <Property Name="EmailUser" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="phoneUser" Type="varchar" MaxLength="12" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Seans_Film">
+    <End Role="Film" Type="Self.Film" Multiplicity="0..1" />
+    <End Role="Seans" Type="Self.Seans" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Film">
+        <PropertyRef Name="ID_Film" />
+      </Principal>
+      <Dependent Role="Seans">
+        <PropertyRef Name="IDFilm" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище user12_dbModelContainer">
+    <EntitySet Name="Film" EntityType="Self.Film" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Seans" EntityType="Self.Seans" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User1" EntityType="Self.User1" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Seans_Film" Association="Self.FK_Seans_Film">
+      <End Role="Film" EntitySet="Film" />
+      <End Role="Seans" EntitySet="Seans" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

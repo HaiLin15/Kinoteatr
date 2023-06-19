@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище user12_dbModelContainer" CdmEntityContainer="user12_dbEntities">
+    <EntitySetMapping Name="Film">
+      <EntityTypeMapping TypeName="user12_dbModel.Film">
+        <MappingFragment StoreEntitySet="Film">
+          <ScalarProperty Name="ID_Film" ColumnName="ID_Film" />
+          <ScalarProperty Name="NameFilm" ColumnName="NameFilm" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+          <ScalarProperty Name="PhotoURL" ColumnName="PhotoURL" />
+          <ScalarProperty Name="Zanr" ColumnName="Zanr" />
+          <ScalarProperty Name="Ogranichenie" ColumnName="Ogranichenie" />
+          <ScalarProperty Name="Opisanie" ColumnName="Opisanie" />
+          <ScalarProperty Name="Date_seans" ColumnName="Date_seans" />
+          <ScalarProperty Name="time_seans" ColumnName="time_seans" />
+          <ScalarProperty Name="Time_Film" ColumnName="Time_Film" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Zal" ColumnName="Zal" />
+          <ScalarProperty Name="mesto1" ColumnName="mesto1" />
+          <ScalarProperty Name="mesto2" ColumnName="mesto2" />
+          <ScalarProperty Name="mesto3" ColumnName="mesto3" />
+          <ScalarProperty Name="mesto4" ColumnName="mesto4" />
+          <ScalarProperty Name="mesto5" ColumnName="mesto5" />
+          <ScalarProperty Name="mesto6" ColumnName="mesto6" />
+          <ScalarProperty Name="mesto7" ColumnName="mesto7" />
+          <ScalarProperty Name="mesto8" ColumnName="mesto8" />
+          <ScalarProperty Name="mesto9" ColumnName="mesto9" />
+          <ScalarProperty Name="mesto10" ColumnName="mesto10" />
+          <ScalarProperty Name="mesto11" ColumnName="mesto11" />
+          <ScalarProperty Name="mesto12" ColumnName="mesto12" />
+          <ScalarProperty Name="mesto13" ColumnName="mesto13" />
+          <ScalarProperty Name="mesto14" ColumnName="mesto14" />
+          <ScalarProperty Name="mesto15" ColumnName="mesto15" />
+          <ScalarProperty Name="mesto16" ColumnName="mesto16" />
+          <ScalarProperty Name="mesto17" ColumnName="mesto17" />
+          <ScalarProperty Name="mesto18" ColumnName="mesto18" />
+          <ScalarProperty Name="mesto19" ColumnName="mesto19" />
+          <ScalarProperty Name="mesto20" ColumnName="mesto20" />
+          <ScalarProperty Name="mesto21" ColumnName="mesto21" />
+          <ScalarProperty Name="mesto22" ColumnName="mesto22" />
+          <ScalarProperty Name="mesto23" ColumnName="mesto23" />
+          <ScalarProperty Name="mesto24" ColumnName="mesto24" />
+          <ScalarProperty Name="mesto25" ColumnName="mesto25" />
+          <ScalarProperty Name="mesto26" ColumnName="mesto26" />
+          <ScalarProperty Name="mesto27" ColumnName="mesto27" />
+          <ScalarProperty Name="mesto28" ColumnName="mesto28" />
+          <ScalarProperty Name="mesto29" ColumnName="mesto29" />
+          <ScalarProperty Name="mesto30" ColumnName="mesto30" />
+          <ScalarProperty Name="Zal2mesto1" ColumnName="Zal2mesto1" />
+          <ScalarProperty Name="Zal2mesto2" ColumnName="Zal2mesto2" />
+          <ScalarProperty Name="Zal2mesto3" ColumnName="Zal2mesto3" />
+          <ScalarProperty Name="Zal2mesto4" ColumnName="Zal2mesto4" />
+          <ScalarProperty Name="Zal2mesto5" ColumnName="Zal2mesto5" />
+          <ScalarProperty Name="Zal2mesto6" ColumnName="Zal2mesto6" />
+          <ScalarProperty Name="Zal2mesto7" ColumnName="Zal2mesto7" />
+          <ScalarProperty Name="Zal2mesto8" ColumnName="Zal2mesto8" />
+          <ScalarProperty Name="Zal2mesto9" ColumnName="Zal2mesto9" />
+          <ScalarProperty Name="Zal2mesto10" ColumnName="Zal2mesto10" />
+          <ScalarProperty Name="Zal2mesto11" ColumnName="Zal2mesto11" />
+          <ScalarProperty Name="Zal2mesto12" ColumnName="Zal2mesto12" />
+          <ScalarProperty Name="Zal2mesto13" ColumnName="Zal2mesto13" />
+          <ScalarProperty Name="Zal2mesto14" ColumnName="Zal2mesto14" />
+          <ScalarProperty Name="Zal2mesto15" ColumnName="Zal2mesto15" />
+          <ScalarProperty Name="Zal2mesto16" ColumnName="Zal2mesto16" />
+          <ScalarProperty Name="Zal2mesto17" ColumnName="Zal2mesto17" />
+          <ScalarProperty Name="Zal2mesto18" ColumnName="Zal2mesto18" />
+          <ScalarProperty Name="Zal2mesto19" ColumnName="Zal2mesto19" />
+          <ScalarProperty Name="Zal2mesto20" ColumnName="Zal2mesto20" />
+          <ScalarProperty Name="Zal2mesto21" ColumnName="Zal2mesto21" />
+          <ScalarProperty Name="Zal2mesto22" ColumnName="Zal2mesto22" />
+          <ScalarProperty Name="Zal2mesto23" ColumnName="Zal2mesto23" />
+          <ScalarProperty Name="Zal2mesto24" ColumnName="Zal2mesto24" />
+          <ScalarProperty Name="Zal2mesto25" ColumnName="Zal2mesto25" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seans">
+      <EntityTypeMapping TypeName="user12_dbModel.Seans">
+        <MappingFragment StoreEntitySet="Seans">
+          <ScalarProperty Name="ID_Seans" ColumnName="ID_Seans" />
+          <ScalarProperty Name="IDFilm" ColumnName="IDFilm" />
+          <ScalarProperty Name="DataSeans" ColumnName="DataSeans" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="Mesta" ColumnName="Mesta" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User1">
+      <EntityTypeMapping TypeName="user12_dbModel.User1">
+        <MappingFragment StoreEntitySet="User1">
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="loginUser" ColumnName="loginUser" />
+          <ScalarProperty Name="passUser" ColumnName="passUser" />
+          <ScalarProperty Name="Fama" ColumnName="Fama" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Otch" ColumnName="Otch" />
+          <ScalarProperty Name="EmailUser" ColumnName="EmailUser" />
+          <ScalarProperty Name="phoneUser" ColumnName="phoneUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

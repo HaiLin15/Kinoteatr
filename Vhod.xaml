@@ -1,0 +1,192 @@
+﻿<Page x:Class="Kinoteatr.Vhod"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Kinoteatr"
+      mc:Ignorable="d" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Title="Vhod" Height="450" Width="800">
+
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#FF3B44C3" Offset="0.592"/>
+                <GradientStop Color="Black" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="64*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" Margin="10,10,20,10"/>
+        <Button  Padding="20" Height="200" Width="200" Margin="512,66,88,118" FocusVisualStyle="{x:Null}"  Grid.Row="1" Click="Button_Click_2">
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF464F78"/>
+                    <GradientStop Color="#FF1446ED" Offset="0.9"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Height" Value="300" />
+                    <Setter Property="Foreground" Value="#E2E2E4" />
+
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="#464F78"/>
+                                <GradientStop Color="#323F6C" Offset="0.9"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#5F76F6" />
+                            <Setter Property="Foreground" Value="#ffffff" />
+                            <Setter Property="Height" Value="330" />
+                        </Trigger>
+
+                        <DataTrigger Binding="{Binding ElementName=element,Path=IsActive}" Value="True">
+                            <Setter Property="Background" Value="#5F76F6" />
+                            <Setter Property="Foreground" Value="#ffffff" />
+                            <Setter Property="Height" Value="330" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <StackPanel VerticalAlignment="Center">
+                <Image Height="100" Source="/icons8-администратор-100 (1).png" Stretch="Fill" Width="100"/>
+                <TextBlock Text="Войти под администратором" TextWrapping="Wrap"  FontSize="18" FontWeight="SemiBold" 
+                       TextAlignment="Center" Margin="0 18 0 0"/>
+                
+            </StackPanel>
+        </Button>
+        <Button  Padding="20" Height="200" Width="200" Margin="299,66,301,118" FocusVisualStyle="{x:Null}"  Grid.Row="1" Click="Button_Click_1">
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF464F78"/>
+                    <GradientStop Color="#FF1446ED" Offset="0.9"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Height" Value="300" />
+                    <Setter Property="Foreground" Value="#E2E2E4" />
+
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="#464F78"/>
+                                <GradientStop Color="#323F6C" Offset="0.9"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#5F76F6" />
+                            <Setter Property="Foreground" Value="#ffffff" />
+                            <Setter Property="Height" Value="330" />
+                        </Trigger>
+
+                        <DataTrigger Binding="{Binding ElementName=element,Path=IsActive}" Value="True">
+                            <Setter Property="Background" Value="#5F76F6" />
+                            <Setter Property="Foreground" Value="#ffffff" />
+                            <Setter Property="Height" Value="330" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <StackPanel VerticalAlignment="Center">
+                <Image Height="100" Source="/icons8-пользователь-96.png" Stretch="Fill" Width="100"/>
+                <TextBlock Text="Авторизоваться" TextWrapping="Wrap"  FontSize="18" FontWeight="SemiBold" 
+                       TextAlignment="Center" Margin="0 27 0 0"/>
+            </StackPanel>
+        </Button>
+        <Button  Padding="20" Height="200" Width="200" Margin="83,66,517,118" FocusVisualStyle="{x:Null}"  Grid.Row="1" Click="Button_Click">
+
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF464F78"/>
+                    <GradientStop Color="#FF1446ED" Offset="0.9"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Height" Value="300" />
+                    <Setter Property="Foreground" Value="#E2E2E4" />
+
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                                <GradientStop Color="#464F78"/>
+                                <GradientStop Color="#323F6C" Offset="0.9"/>
+                            </LinearGradientBrush>
+                        </Setter.Value>
+                    </Setter>
+
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="5">
+                                    <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#5F76F6" />
+                            <Setter Property="Foreground" Value="#ffffff" />
+                            <Setter Property="Height" Value="330" />
+                        </Trigger>
+
+                        <DataTrigger Binding="{Binding ElementName=element,Path=IsActive}" Value="True">
+                            <Setter Property="Background" Value="#5F76F6" />
+                            <Setter Property="Foreground" Value="#ffffff" />
+                            <Setter Property="Height" Value="330" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+
+            <StackPanel VerticalAlignment="Center">
+
+                
+                <Image Height="100" Source="/icons8-пользователи-100.png" Stretch="Fill" Width="100"/>
+                <TextBlock Text="Войти под гостем"  FontSize="18" FontWeight="SemiBold" 
+                       TextAlignment="Center" Margin="0 20 0 0"/>
+            </StackPanel>
+        </Button>
+        <Button Height="35" Width="170" Content="Регистрация" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 270 0 0" FontFamily="Comic Sans MS" FontSize="15" Click="Button_Click_3" ></Button>
+        <Label Grid.Row="0" Foreground="AliceBlue"  Content="Добро пожаловать!" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35" FontFamily="Comic Sans MS" Background="#00000000"  />
+
+    </Grid>
+</Page>
